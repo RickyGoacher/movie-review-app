@@ -1,6 +1,4 @@
-import { useRef, useState, useEffect, useMemo, useCallback} from 'react';
-import { easeIn, easeOut } from "polished";
-import { createReducer }from "@reduxjs/toolkit"
+import { useRef, useState, useEffect, useCallback} from 'react';
 import { Button } from '@mui/material';
 import { MovieCompaniesInterface, MovieInterface, ReviewInterface, HeadCellsInterface } from './App.types';
 import { EnhancedTable } from './components/EnhancedTable/EnhancedTable';

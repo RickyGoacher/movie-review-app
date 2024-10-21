@@ -1,0 +1,73 @@
+.review-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--large-spacing);
+    border: solid 1px var(--grey-colour);
+    padding: var(--large-spacing);
+    background-color: white;
+    z-index: 1;
+}
+
+.review-form-wrapper p {
+    margin: 0;
+}
+
+.review-form-wrapper form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--large-spacing);
+}
+
+.review-form-wrapper form textarea {
+    min-width: 300px;
+    min-height: 150px;
+    padding: var(--medium-spacing);
+}
+
+.close-wrapper {
+    display: none;
+}
+
+.error {
+    color: red;
+}
+
+@media screen and (max-width: 769px) {
+    .review-form-container {
+        display: none;
+    }
+    .review-form-container.active {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .review-form-container.active .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        opacity: .3;
+        z-index: 1;
+    }
+    .close-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .close-wrapper .close {
+        cursor: pointer;
+    }
+}

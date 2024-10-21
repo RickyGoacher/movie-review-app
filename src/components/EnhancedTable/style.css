@@ -1,0 +1,11 @@
+.rating-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.rating-container .number {
+    font-size: 16px;
+    margin-left: var(--small-spacing);
+}
+
